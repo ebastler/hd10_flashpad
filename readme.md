@@ -8,19 +8,20 @@ Download the [Gerber files](./fab/HD10_flashpad.zip) from the [fab](./fab) folde
 PCB factories might check back because the bottom layer has no copper at all, and the PCB has no drills. I used JLCPCB and they asked about both points. Just confirm them to proceed into production - this is intentional.
 
 ## Modifying the light
-I have posted a more detailed teadown [here](https://budgetlightforum.com/t/review-wurkkos-hd10-a-great-formfactor-anduril-2-90-headlamp/224176/2), so this readme will only outline the basics.
+I have posted a more detailed teadown [here](https://budgetlightforum.com/t/review-wurkkos-hd10-a-great-formfactor-anduril-2-90-headlamp/224176/2), so this readme will only outline the basics:
 
-First you need to desolder the 6 pins connecting the LED daughterboard to the main PCB. This will allow you to carefully push the driver out of the battery tube. Desoldering pumps and solder wick are a great help for this step, and a moderately powerful soldering iron is needed. 
+1) First you need to desolder the 6 pins connecting the LED daughterboard to the main PCB. This will allow you to carefully push the driver out of the battery tube. Desoldering pumps and solder wick are a great help for this step, and a moderately powerful soldering iron is needed. 
 
-Locate the flashing pads, and solder a thin enameled wire to it. Please do not use bare copper wire (it will short the light) or regular wire (too thick). Route the wire through the hole for the LED daughterboard. This milled slot has drilled corners, which are large enough for a thin enameled wire to pass through. Cover the solder joint and wire with a bit of Kapton tape.
+2) Locate the flashing pads, and solder a thin enameled wire to it. Please do not use bare copper wire (it will short the light) or regular wire (too thick). Route the wire through the hole for the LED daughterboard. This milled slot has drilled corners, which are large enough for a thin enameled wire to pass through. Cover the solder joint and wire with a bit of Kapton tape.
 
-Reassemble the light, and make sure the wire stays in one of the corner drills. On the picture I soldered it to a temporary pad of copper tape on Kapton - ignore that step since you will have the PCBs already.
+3) Reassemble the light, and make sure the wire stays in one of the corner drills. On the picture I soldered it to a temporary pad of copper tape on Kapton - ignore that step since you will have the PCBs already.
 
-Place the PCB as shown and stick it down with a thin double sided tape. The PCB has no metal on the bottom layer, so it can not short out anything. Solder the thin wire to the `R` pad, and the `+` and `-` pads to the nearest contacts on the LED PCB. A short piece of (very) thin wire might make this easier. You might consider adding a final layer of Kapton over all exposed solder joints as a last step and make sure they are all flat enough that they do not protrude over the brass button.
+4) Place the PCB as shown and stick it down with a thin double sided tape. The PCB has no metal on the bottom layer, so it can not short out anything. Solder the thin wire to the `R` pad, and the `+` and `-` pads to the nearest contacts on the LED PCB. A short piece of (very) thin wire might make this easier. You might consider adding a final layer of Kapton over all exposed solder joints as a last step and make sure they are all flat enough that they do not protrude over the brass button.
 
+| <div style="width:350px"></div> | <div style="width:350px"></div> |
+|:----------------------------------------------------|:--------------------------------------------------------------|
 | <img src="./img/flashpad_diassemble.jpg" alt="desolder" width="300" /> | <img src="./img/flashpad_wire.jpg" alt="solder flashing wire" width="300" /> |
-|----------------------------------------------------|--------------------------------------------------------------|
-| Desolder these 6 pins connecting the two PCBs, then remove the PCB from the body | Solder an enameled wire to the `R` pad and cover with Kapton, wire it through a corner of the slot for the LED PCB |
+| 1) Remove PCB from housing | 2) Solder data wire |
 | <img src="./img/flashpad_wire2.jpg" alt="reassemble flashlight" width="300" /> | <img src="./img/flashpad_final.jpg" alt="Finished" width="300" />|
-| Route the enameled wire out next to the LED PCB, reseat the driver and resolder the 6 pads | Stick the PCB in with double sided tape, solder the wire to the `R` pad, and solder the `+` and `-` marked pads to the nearest solder joints of the LED PCB |
+| 3) Reassemble | 4) Add flashing PCB |
 
